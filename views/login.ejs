@@ -1,0 +1,30 @@
+<% include header%>
+
+<section class="slider">
+</section>
+
+<div class="main">
+<section class="login">
+		<h2>Login Here</h2>
+		<div class="contact">
+			
+        <form method="POST" action="/login">
+            <font color="blue"><b><%= output %></b></font>
+            <p>
+                <input type="email" id="username" name="username" placeholder="username">
+            </p>
+            <p>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </p>
+            <p>
+                <input type="submit" value="Login">
+            </p>
+        </form>
+		</div>
+        
+</section>
+
+</div>
+
+<% include footer%>
+

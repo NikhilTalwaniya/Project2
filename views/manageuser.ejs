@@ -1,0 +1,64 @@
+<% include adminheader%>
+
+
+<!-- Slider Start-->
+<section class="slider">
+<div class="inner">
+<img src="/images/slider1.jpg" width="960" height="171" alt="codetomake.com" title="codetomake.com">
+</div>
+</section>
+<!-- Slider End-->
+
+
+<!-- Main content Start-->
+<div class="main">
+<section class="col-main">
+<h1>Views and Manage Users</h1>
+<center>
+	<h2>
+		<table cellspacing="10">
+			<tr>
+				<th>RegId</th>
+				<th>Name</th>
+				<th>User Name</th>
+				<th>Password</th>
+				<th>Number</th>
+				<th>Address</th>
+				<th>Gender</th>
+				<th>City</th>
+				<th>Role</th>
+				<th>Status</th>
+				<th>Action</th>
+			</tr>
+			<tr><td colspan="11" ><hr></td></tr>
+			<% for (let row of userdetails) { %>
+			<tr>				
+				<td><%= row._id %></td>
+				<td><%= row.name %></td>
+				<td><%= row.username %></td>
+				<td><%= row.password %></td>
+				<td><%= row.number %></td>
+				<td><%= row.address %></td>
+				<td><%= row.gender %></td>
+				<td><%= row.city %></td>
+				<td><%= row.role %></td>
+				<td><%= row.status %></td>
+				<td><%= row.action %></td>	
+				<tr><td colspan="11"><hr></td></tr>			
+			</tr>
+			<%}%>
+		</table>
+	</h2>
+</center>
+<!-- Main content End-->
+
+<!-- Side box Start-->
+</section>
+<aside class="col-right">	
+	
+</aside>
+</div>
+
+<!-- Side box Start-->
+
+<% include footer%>

@@ -1,0 +1,29 @@
+<% include header%>
+
+<section class="slider">
+</section>
+
+<div class="main">
+    <section class="col-main">
+            <h2>Contact us</h2>
+            <div class="contact">
+                <form method="POST" action="/contact">
+                <font color="blue"><b><%= output %></b></font>
+                <p>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                </p>
+                <p>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </p>
+                <p>
+                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Send">
+                </p>
+                </form>
+            </div>
+</section>
+
+</div>
+<% include footer%>

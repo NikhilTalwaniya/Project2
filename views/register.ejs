@@ -1,0 +1,56 @@
+<% include header%>
+
+<section class="slider">
+</section>
+
+<div class="main">
+<section class="col-main">
+		<h2>Register Here</h2>
+		<div class="contact">
+			<form method="POST" action="/register">
+				<font color="blue"><b><%= output %></b></font>
+			<p>
+				<input type="text" id="name" name="name" placeholder="Name">
+			</p>
+			<p>
+				<input type="email" id="username" name="username" placeholder="Email">
+			</p>
+			<p>
+				<input type="password" id="password" name="password" placeholder="Password">
+			</p>			
+            <p>
+				<input type="tel" id="number" name="number" placeholder="Contact Number" >
+			</p>
+            <p>
+				<input type="text" id="address" name="address" placeholder="address">
+			</p>
+			<p>
+				<label for="gender">Choose your gender:</label>
+				<select name="gender" id="gender">
+					<option value="">Select Gender</option>	
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">other</option>
+				</select>
+			</p>
+
+			<p>
+				<label for="city">Choose your City :</label>
+
+				<select name="city" id="city">
+				  <option value="">Select City</option>	
+				  <option value="city">indore</option>
+				  <option value="city">bhopal</option>
+				  <option value="city">ujjain</option>
+				</select>
+			</p>
+			
+			<p>
+				<input type="submit"  value="Submit">
+			</p>
+			</form>
+		</div>
+</section>
+
+</div>
+<% include footer%>
